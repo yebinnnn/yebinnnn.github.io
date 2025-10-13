@@ -4,7 +4,7 @@ html, body {
     overflow: hidden;
 }
 body, h1, h2, h3, h4, h5, h6  {
-  font-family: Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
 }
 body {  
     background-image: url('img/fondoLucky2.jpg');
@@ -37,6 +37,42 @@ body {
 }
 #link-carrd {
     color: #fd94ae;
+}
+.selections{
+    margin-bottom: 8px;
+}
+button {
+    padding: 10px 25px;
+    font-size: 17px;
+    background: #9fcd8f;    
+    color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s;
+    white-space: nowrap;
+    font-family: Helvetica, Arial, sans-serif;
+
+}
+button:hover {
+    background: #6b9757;    
+    transform: scale(1.02);
+}
+
+input[type=number]{
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1.5px solid #ffcbd8;
+    border-radius: 12px;
+    background: #fff;
+    color: #fd94ae;
+    width: calc(70% - 30px);
+    margin: 8px 0;
+    transition: all 0.2s;
+}
+input:focus {
+    outline: none;
+    box-shadow: 0 0 10px #fd94ae;
 }
 /* #nombre-pagina{
     display: inline-block;

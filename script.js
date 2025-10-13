@@ -11,7 +11,7 @@ function calcular() {
     const errorMessageDiv = document.getElementById("error-message");
     errorMessageDiv.textContent = "";
     if (isNaN(valorNumerico) || valorNumerico === 0||valorNumerico<=0) {
-    errorMessageDiv.textContent = "Ingresá un número, amor, daaaale... ah";
+    errorMessageDiv.textContent = "Ingresá un número positivo, amor, daaaale... ah";
     document.getElementById("resultado").innerHTML = "";
     document.getElementById("aclaracion").innerHTML = "";
     return;
