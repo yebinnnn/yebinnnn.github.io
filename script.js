@@ -1,7 +1,7 @@
 function calcular() {
     const dolar = 1500;
-    const feess = 2.2;
-    const feecs= 5.4;
+    const feess = 12.2;
+    const feecs= 15.4;
 
     var valorInput = document.getElementById("valor_usd").value;
     var valorNumerico = parseFloat(valorInput.replace(',', '.'));
@@ -11,7 +11,7 @@ function calcular() {
     const errorMessageDiv = document.getElementById("error-message");
     errorMessageDiv.textContent = "";
     if (isNaN(valorNumerico) || valorNumerico === 0||valorNumerico<=0) {
-    errorMessageDiv.textContent = "Ingresá un número positivo, amor, daaaale... ah";
+    errorMessageDiv.textContent = "Ingresá un número";
     document.getElementById("resultado").innerHTML = "";
     document.getElementById("aclaracion").innerHTML = "";
     return;
