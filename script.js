@@ -25,7 +25,7 @@ function calcular() {
         return;
     }
     if(esConSeguro.checked){
-        if(checkOculto==true){
+        if(checkOculto.checked){
             subtotal = (valorNumerico + feecsSec) * dolar;
             totalARS = Math.round(subtotal);
         }else{
@@ -33,7 +33,7 @@ function calcular() {
             totalARS = Math.round(subtotal);
         }
     }else{
-        if(checkOculto==true){
+        if(checkOculto.checked){
             subtotal = (valorNumerico + feessSec) * dolar;
             totalARS = Math.round(subtotal);
         }else{
