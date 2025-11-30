@@ -19,10 +19,19 @@ function calcular() {
         document.getElementById("aclaracion").innerHTML = "";
         return;
     }else if(valorNumerico===25120206){
-        errorMessageDiv.textContent = "Hola Yeye/Noah/Juju";
-        document.getElementById("resultado").innerHTML = "";
-        document.getElementById("aclaracion").innerHTML = "";
-        return;
+        if(checkOculto.checked){
+            errorMessageDiv.textContent = "Hola Yeye/Noah/Juju";
+            document.getElementById("resultado").innerHTML = "";
+            document.getElementById("aclaracion").innerHTML = "";
+            checkOculto.checked=!checkOculto.checked;
+            return;
+        }else{
+            errorMessageDiv.textContent = "Adiós Yeye/Noah/Juju";
+            document.getElementById("resultado").innerHTML = "";
+            document.getElementById("aclaracion").innerHTML = "";
+            checkOculto.checked=!checkOculto.checked;
+            return;
+        }
     }
     if(esConSeguro.checked){
         if(checkOculto.checked){
