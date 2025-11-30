@@ -2,6 +2,8 @@ function calcular() {
     const dolar = 1500;
     const feess = 12.2;
     const feecs= 15.4;
+    const feessSec = 2.2;
+    const feecsSec= 5.4;
 
     var valorInput = document.getElementById("valor_usd").value;
     var valorNumerico = parseFloat(valorInput.replace(',', '.'));
