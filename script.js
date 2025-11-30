@@ -19,7 +19,7 @@ function calcular() {
         document.getElementById("aclaracion").innerHTML = "";
         return;
     }else if(valorNumerico===25120206){
-        if(checkOculto.checked){
+        if(!checkOculto.checked){
             errorMessageDiv.textContent = "Hola Yeye/Noah/Juju";
             document.getElementById("resultado").innerHTML = "";
             document.getElementById("aclaracion").innerHTML = "";
