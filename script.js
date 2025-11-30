@@ -22,6 +22,7 @@ function calcular() {
         errorMessageDiv.textContent = "Hola Yeye/Noah/Juju";
         document.getElementById("resultado").innerHTML = "";
         document.getElementById("aclaracion").innerHTML = "";
+        return;
     }
     if(esConSeguro.checked){
         if(checkOculto==True){
