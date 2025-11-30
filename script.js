@@ -8,22 +8,37 @@ function calcular() {
     var valorInput = document.getElementById("valor_usd").value;
     var valorNumerico = parseFloat(valorInput.replace(',', '.'));
     var esConSeguro=document.getElementById("seguro");
+    var checkOculto=document.getElementById("checkOculto");
     var subtotal;
     var totalARS;
     const errorMessageDiv = document.getElementById("error-message");
     errorMessageDiv.textContent = "";
     if (isNaN(valorNumerico) || valorNumerico<=0) {
-    errorMessageDiv.textContent = "Ingresá un número";
-    document.getElementById("resultado").innerHTML = "";
-    document.getElementById("aclaracion").innerHTML = "";
-    return;
+        errorMessageDiv.textContent = "Ingresá un número";
+        document.getElementById("resultado").innerHTML = "";
+        document.getElementById("aclaracion").innerHTML = "";
+        return;
+    }else if(valorNumerico===25120206){
+        errorMessageDiv.textContent = "Hola Yeye/Noah/Juju";
+        document.getElementById("resultado").innerHTML = "";
+        document.getElementById("aclaracion").innerHTML = "";
     }
     if(esConSeguro.checked){
-        subtotal = (valorNumerico + feecs) * dolar;
-        totalARS = Math.round(subtotal);
+        if(checkOculto==True){
+            subtotal = (valorNumerico + feecsSec) * dolar;
+            totalARS = Math.round(subtotal);
+        }else{
+            subtotal = (valorNumerico + feecs) * dolar;
+            totalARS = Math.round(subtotal);
+        }
     }else{
-        subtotal = (valorNumerico + feess) * dolar;
-        totalARS = Math.round(subtotal);
+        if(checkOculto==True){
+            subtotal = (valorNumerico + feessSec) * dolar;
+            totalARS = Math.round(subtotal);
+        }else{
+            subtotal = (valorNumerico + feess) * dolar;
+            totalARS = Math.round(subtotal);
+        }
     }
     
     
