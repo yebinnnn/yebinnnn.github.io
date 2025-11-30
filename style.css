@@ -54,6 +54,9 @@ button {
     font-family: Helvetica, Arial, sans-serif;
 
 }
+#checkOculto{
+  display: none;
+}
 button:hover {
     background: #6b9757;    
     transform: scale(1.02);
