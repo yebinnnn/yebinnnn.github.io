@@ -10,7 +10,7 @@ function calcular() {
     var totalARS;
     const errorMessageDiv = document.getElementById("error-message");
     errorMessageDiv.textContent = "";
-    if (isNaN(valorNumerico) || valorNumerico === 0||valorNumerico<=0) {
+    if (isNaN(valorNumerico) || valorNumerico<=0) {
     errorMessageDiv.textContent = "Ingresá un número";
     document.getElementById("resultado").innerHTML = "";
     document.getElementById("aclaracion").innerHTML = "";
