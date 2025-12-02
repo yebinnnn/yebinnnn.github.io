@@ -23,13 +23,13 @@ function calcular() {
             errorMessageDiv.textContent = "Hola Yeye/Noah/Juju";
             document.getElementById("resultado").innerHTML = "";
             document.getElementById("aclaracion").innerHTML = "";
-            checkOculto.checked=!checkOculto.checked;
+            checkOculto.checked = !checkOculto.checked;
             return;
         }else{
             errorMessageDiv.textContent = "Adiós Yeye/Noah/Juju";
             document.getElementById("resultado").innerHTML = "";
             document.getElementById("aclaracion").innerHTML = "";
-            checkOculto.checked=!checkOculto.checked;
+            checkOculto.checked = !checkOculto.checked;
             return;
         }
     }
