@@ -65,7 +65,7 @@ button:hover {
 input[type=number]{
     padding: 10px 15px;
     font-size: 16px;
-    border: 1.5px solid #ffcbd8;
+    border: 1.5px solid #c5e1a5;
     border-radius: 12px;
     background: #fff;
     color: #fd94ae;
@@ -75,7 +75,7 @@ input[type=number]{
 }
 input:focus {
     outline: none;
-    box-shadow: 0 0 10px #AED581;
+    box-shadow: 0 0 10px #c5e1a5;
 }
 /* #nombre-pagina{
     display: inline-block;
