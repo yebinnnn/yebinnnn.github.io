@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+  <link rel="icon" href="img/1764729548881.png">
+  <title>Hope pps Buyee</title>
+</head>
+<body>
+    <!-- <h1 id="nombre-pagina"><span class="linea-arriba">Lucky S</span>tore Bunyee</h1> --> 
+    <div class="container w3-large" id="calculadora">
+        
+        <div class="instucciones">
+            <p>¡Hola!<br>Para cotizar tu pedido ingresa el valor en dolares, no en yenes.<br>Si queres, tenemos la opción de asegurar tu pedido.</p>
+        </div>
+        <input type="number" id="valor_usd" placeholder="ingrese el valor en dolares" step="0.01">
+        <button class="boton-calcular" type="submit" onclick="calcular()">Calcular</button>
+        <div class="selections">
+            <label for="seguro">Con  seguro</label>
+            <input type="checkbox" name="seguro" id="seguro">
+            <input type="checkbox" name="checkOculto" id="checkOculto">
+        </div>
+        
+        <div class="mensajes">
+            <p class="resultado" id="resultado"></p>
+            <p id="aclaracion"></p>
+            <p id="error-message"></p>
+        </div>
+        <p>Para más información <a href="https://docs.google.com/spreadsheets/d/1WShaPKVmJWxKyPCC_48UeqVaKQ2U6KZrVbUXx7RgIYA/edit?gid=1739353427#gid=1739353427" target="_blank" id="link-carrd">hacé click acá</a></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+body, h1, h2, h3, h4, h5, h6  {
+    font-family: Helvetica, Arial, sans-serif;
+}
+body {  
+    background-image: url('img/fondo hope pps 2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mensajes{
+    color: gray;
+}
+#valor_usd{
+    width: 300px;
+    text-align: center;
+}
+#calculadora{
+    padding: 20px;
+    border-style: solid;
+    border-color: #6B9757;
+    border-width: 4px; 
+    border-radius: 20px;
+    background-color: rgba(255, 252, 252, 0.336);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+#link-carrd {
+    color: #6B9757;
+}
+.selections{
+    margin-bottom: 8px;
+}
+button {
+    padding: 10px 25px;
+    font-size: 17px;
+    background: #9fcd8f;    
+    color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s;
+    white-space: nowrap;
+    font-family: Helvetica, Arial, sans-serif;
+
+}
+#checkOculto{
+  display: none;
+}
+button:hover {
+    background: #6b9757;    
+    transform: scale(1.02);
+}
+
+input[type=number]{
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1.5px solid #c5e1a5;
+    border-radius: 12px;
+    background: #fff;
+    color: #fd94ae;
+    width: calc(70% - 30px);
+    margin: 8px 0;
+    transition: all 0.2s;
+}
+input:focus {
+    outline: none;
+    box-shadow: 0 0 10px #c5e1a5;
+}
+/* #nombre-pagina{
+    display: inline-block;
+    color: gray;
+
+    
+}
+.linea-arriba{
+    text-decoration: overline;
+} */
