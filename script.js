@@ -1,7 +1,7 @@
 function calcular() {
     const dolar = 1470;
-    const feess = 12;
-    const feecs= 15.2;
+    const feess = 2.2;
+    const feecs= 5.2;
     const feessSec = 2.2;
     const feecsSec= 5.4;
 
@@ -59,7 +59,7 @@ function calcular() {
     })}`;
     
     document.getElementById("aclaracion").innerHTML = 
-    "precio sin envío e imp.";
+    "Cotización sin envío a Corea";
 }
 
 document.addEventListener('DOMContentLoaded', () => {
