@@ -1,8 +1,8 @@
 function calcular() {
-    const dolar = 1495;
-    const feess = 2.2;
+    const dolar = 1505;
+    const feess = 2.25;
     const feecs= 5.2;
-    const feessSec = 2.2;
+    const feessSec = 2.25;
     const feecsSec= 5.4;
 
     var valorInput = document.getElementById("valor_usd").value;
