@@ -1,5 +1,5 @@
 function calcular() {
-    const dolar = 1505;
+    const dolar = 1542;
     const feess = 2.25;
     const feecs= 5.2;
     const feessSec = 2.25;
