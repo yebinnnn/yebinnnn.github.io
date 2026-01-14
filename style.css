@@ -24,6 +24,10 @@ body {
     width: 300px;
     text-align: center;
 }
+#valor_div{
+    width: 300px;
+    text-align: center;
+}
 #calculadora{
     padding: 20px;
     border-style: solid;
