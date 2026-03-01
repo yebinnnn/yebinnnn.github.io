@@ -2,10 +2,10 @@ function calcular() {
     const dolar = 1542;
     const feess = 2.25;
     const feecs= 5.5;
-    const feessSec = 2.25;
-    const feecsSec= 5.4;
 
     var valorInput = document.getElementById("valor_usd").value;
+    var valorDiv = document.getElementById("valor_div").value;
+    var styDiv = document.getElementById("valor_div");
     var valorNumerico = parseFloat(valorInput.replace(',', '.'));
     var esConSeguro=document.getElementById("seguro");
     var checkOculto=document.getElementById("checkOculto");
@@ -24,31 +24,24 @@ function calcular() {
             document.getElementById("resultado").innerHTML = "";
             document.getElementById("aclaracion").innerHTML = "";
             checkOculto.checked = !checkOculto.checked;
+            styDiv.setAttribute('style', 'display:flex;');
             return;
         }else{
             errorMessageDiv.textContent = "Adiós Yeye/Noah/Juju";
             document.getElementById("resultado").innerHTML = "";
             document.getElementById("aclaracion").innerHTML = "";
             checkOculto.checked = !checkOculto.checked;
+            styDiv.setAttribute('style', 'display:none;');
+            valorDiv=1;
             return;
         }
     }
     if(esConSeguro.checked){
-        if(checkOculto.checked){
-            subtotal = (valorNumerico + feecsSec) * dolar;
-            totalARS = Math.round(subtotal);
-        }else{
-            subtotal = (valorNumerico + feecs) * dolar;
-            totalARS = Math.round(subtotal);
-        }
+        subtotal = (valorNumerico + feecs) * dolar;
+        totalARS = Math.round(subtotal/valorDiv);
     }else{
-        if(checkOculto.checked){
-            subtotal = (valorNumerico + feessSec) * dolar;
-            totalARS = Math.round(subtotal);
-        }else{
-            subtotal = (valorNumerico + feess) * dolar;
-            totalARS = Math.round(subtotal);
-        }
+        subtotal = (valorNumerico + feess) * dolar;
+        totalARS = Math.round(subtotal/valorDiv);
     }
     
     
