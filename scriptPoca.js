@@ -25,7 +25,7 @@ function calcular() {
     })}`;
     
     document.getElementById("aclaracion").innerHTML = 
-    "Cotización sin envío a Corea";
+    "Cotización sin envío a Argentina";
 }
 
 document.addEventListener('DOMContentLoaded', () => {
