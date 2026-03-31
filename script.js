@@ -1,7 +1,7 @@
 function calcular() {
-    const dolar = 1542;
-    const feess = 2.25;
-    const feecs= 5.5;
+    const dolar = 1537;
+    const feess = 3.35;
+    const feecs= 6.65;
 
     var valorInput = document.getElementById("valor_usd").value;
     var valorDiv = document.getElementById("valor_div").value;
@@ -18,7 +18,7 @@ function calcular() {
         document.getElementById("resultado").innerHTML = "";
         document.getElementById("aclaracion").innerHTML = "";
         return;
-    }else if(valorNumerico===25120206){
+    }else if(valorNumerico===251202){
         if(!checkOculto.checked){
             errorMessageDiv.textContent = "Hola Yeye/Noah/Juju";
             document.getElementById("resultado").innerHTML = "";
@@ -38,10 +38,10 @@ function calcular() {
     }
     if(esConSeguro.checked){
         subtotal = (valorNumerico + feecs) * dolar;
-        totalARS = Math.round(subtotal/valorDiv);
+        totalARS = Math.ceil(subtotal/valorDiv);
     }else{
         subtotal = (valorNumerico + feess) * dolar;
-        totalARS = Math.round(subtotal/valorDiv);
+        totalARS = Math.ceil(subtotal/valorDiv);
     }
     
     
