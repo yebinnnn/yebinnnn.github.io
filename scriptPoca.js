@@ -1,5 +1,5 @@
 function calcular() {
-    const dolar = 1495;
+    const dolar = 1480;
 
     var valorInput = document.getElementById("valor_usd").value;
     var valorNumerico = parseFloat(valorInput.replace(',', '.'));
