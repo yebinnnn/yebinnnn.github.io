@@ -20,14 +20,14 @@ function calcular() {
         return;
     }else if(valorNumerico===251202){
         if(!checkOculto.checked){
-            errorMessageDiv.textContent = "Hola Yeye/Noah/Juju";
+            errorMessageDiv.textContent = "Hola Yeye y Samu";
             document.getElementById("resultado").innerHTML = "";
             document.getElementById("aclaracion").innerHTML = "";
             checkOculto.checked = !checkOculto.checked;
             styDiv.setAttribute('style', 'display:flex;');
             return;
         }else{
-            errorMessageDiv.textContent = "Adiós Yeye/Noah/Juju";
+            errorMessageDiv.textContent = "Adiós Yeye y Samu";
             document.getElementById("resultado").innerHTML = "";
             document.getElementById("aclaracion").innerHTML = "";
             checkOculto.checked = !checkOculto.checked;
