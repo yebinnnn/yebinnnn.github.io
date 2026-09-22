@@ -4,7 +4,7 @@ function calcular() {
     const feesBuyee = 1.003;
     const feesDorzoo = 1.34;
     const feesPaypal = 1.035;
-    const feecs= 6.65;
+    //const feecs= 6.65;
 
     var valorInput = document.getElementById("valor_usd").value;
     var valorDiv = document.getElementById("valor_div").value;
