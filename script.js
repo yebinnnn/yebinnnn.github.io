@@ -1,13 +1,17 @@
 function calcular() {
-    const dolar = 1570;
-    const feess = 3.35;
+    const dolar = 1670;
+    //const feess = 3.35;
+    const feesBuyee = 1.003;
+    const feesDorzoo = 1.34;
+    const feesPaypal = 1.035;
     const feecs= 6.65;
 
     var valorInput = document.getElementById("valor_usd").value;
     var valorDiv = document.getElementById("valor_div").value;
     var styDiv = document.getElementById("valor_div");
     var valorNumerico = parseFloat(valorInput.replace(',', '.'));
-    var esConSeguro=document.getElementById("seguro");
+    //var esConSeguro=document.getElementById("seguro");
+    var esConSeguro=false;
     var checkOculto=document.getElementById("checkOculto");
     var subtotal;
     var totalARS;
@@ -37,10 +41,10 @@ function calcular() {
         }
     }
     if(esConSeguro.checked){
-        subtotal = (valorNumerico + feecs) * dolar;
+        subtotal = ((valorNumerico * feesBuyee + feesDorzoo) * feesPaypal) * dolar;
         totalARS = Math.ceil(subtotal/valorDiv);
     }else{
-        subtotal = (valorNumerico + feess) * dolar;
+        subtotal = ((valorNumerico * feesBuyee + feesDorzoo) * feesPaypal) * dolar;
         totalARS = Math.ceil(subtotal/valorDiv);
     }
     
