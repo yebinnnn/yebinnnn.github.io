@@ -41,10 +41,10 @@ function calcular() {
         }
     }
     if(esConSeguro.checked){
-        subtotal = ((valorNumerico * feesBuyee + feesDorzoo) * feesPaypal) * dolar;
+        subtotal = ((valorNumerico * feesDorzoo) * feesPaypal) * dolar;
         totalARS = Math.ceil(subtotal/valorDiv);
     }else{
-        subtotal = ((valorNumerico * feesBuyee + feesDorzoo) * feesPaypal) * dolar;
+        subtotal = ((valorNumerico * feesDorzoo) * feesPaypal) * dolar;
         totalARS = Math.ceil(subtotal/valorDiv);
     }
     
